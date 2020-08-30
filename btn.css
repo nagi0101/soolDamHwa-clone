@@ -1,0 +1,19 @@
+button {
+  width: 110px;
+  height: 40px;
+  border-radius: 3px;
+  font-size: 23px;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: black;
+}
+
+.btn-subscribe {
+  background-color: #ff7276;
+  border: none;
+  color: white;
+}

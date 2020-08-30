@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9ada8679dc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header-normal">
+        <h1><a href="index.html">술담화</a></h1>
+        <div class="header__menus">
+          <a href=""><span>나의 담화</span></a>
+          <a href=""><span>로그아웃</span></a>
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+      <div class="mainBanner">
+        <h2 class="mainBanner__title">오늘부터 술은 <br />특별하고 의미있게</h2>
+        <h3 class="mainBanner__subTitle">
+          술담화와 함께 매월 새로운 <br />전통주를 즐겨보세요
+        </h3>
+        <div class="mainbanner__btns">
+          <button
+            class="btn btn-subscribe mainBanner__btn"
+            onclick="location.href = 'subscribe.html'"
+          >
+            구독하기
+          </button>
+          <button
+            class="btn mainBanner__btn"
+            onclick="location.href = 'shop.html'"
+          >
+            쇼핑몰
+          </button>
+        </div>
+      </div>
+      <div class="mainSection">
+        <img src="img/graph.jpg" alt="" class="img_sub" />
+        <img src="img/sub_this_month.jpg" alt="" class="img_sub" />
+        <div class="subscribeNow">
+          <h3>담화박스</h3>
+          <div>
+            지금 바로 구독신청하고 전국각지 양조장의 다양한 <br />전통주를
+            경험하세요
+          </div>
+          <div>구성:추천 전통주 2~4병, 큐레이션카드 2장, 스낵안주</div>
+          <button
+            class="btn btn-subscribe"
+            onclick="location.href = 'subscribe.html'"
+          >
+            구독하기
+          </button>
+        </div>
+        <img src="img/box_including.png" alt="" class="img_sub" />
+      </div>
+      <div class="subscribeSumerizes">
+        <div class="sumerizes__summerize summerize">
+          <i></i>
+          <span
+            >전통주 소믈리에가 선정한 이 달의 술과 <br />그에 맞는 안주를 매월
+            <strong>배송</strong>해드립니다.</span
+          >
+        </div>
+        <div class="sumerizes__summerize summerize">
+          <i></i>
+          <span>
+            2,000 종류가 넘는 우리나라 술을 <br />큐레이션과 함께 받아보세요.
+          </span>
+        </div>
+        <div class="sumerizes__summerize summerize">
+          <i></i>
+          <span
+            >구독가보다 평균 15% 이상 더 값어치가 나가는 <br />전통주가
+            <strong>택배박스</strong>에 담겨 보내집니다.</span
+          >
+        </div>
+      </div>
+      <div class="subscribeSchedule">
+        <div class="">
+          <h3>매달 셋째 주 목요일 정기배송</h3>
+          <p>
+            담화박스는 매월 셋째 주 목요일에 찾아갑니다. <br />
+            이번 달 담화 박스 받고 싶으시면 셋째 주 <strong>일요일까지</strong
+            ><br />꼭 주문 하세요! <br />*6월 15일 결제, 18일 배송입니다!*
+          </p>
+        </div>
+        <img src="img/schedule.png" alt="" class="img_sub" />
+      </div>
+      <div class="slider">
+        <div class="slider__slide slide">
+          <div class="slider__items items">
+            "술의 퀄리티도 가성비도 좋았지만 무엇보다도 한달에 한 번 기다려지는
+            하루가 생긴다는게 최고 메리트^^" <br />
+            - 정기* (3회 구매) -
+          </div>
+          <div class="slider__items items">
+            "정말 난 구독 같은거 안하는데.. 이런걸 하게 되네.. 결제한거 까먹고
+            있었는데 선물 받은 느낌이네. 불금은 전통주로 ㄱㄱ!" <br />
+            - 김연* (4회구매) -
+          </div>
+          <div class="slider__items items">
+            "각 술에 대한 설명이 담긴 큐레이션 카드, 그리고 스낵안주까지 알찬
+            구성과 정성 담긴 포장에 감동..." <br />
+            - 주민* (2회구매) -
+          </div>
+          <div class="slider__items items">
+            "평생 못마셔봤을지도 모를 막걸리를 마셔도보고, 술담화 구독하기
+            잘했음" <br />- ochul38 (2회구매) -
+          </div>
+        </div>
+      </div>
+      <div class="subscribeReviews">
+        <h3>최근 담화</h3>
+        <div class="reviews"></div>
+        <div class="dots"></div>
+      </div>
+      <div class="subscribeRemain">
+        <h3>이번달 담화박스</h3>
+        <p>
+          <strong>22일</strong> 밖에 안남았습니다. <br />이번달 담화박스 놓치지
+          마세요!
+        </p>
+        <button
+          class="btn btn-subscribe"
+          onclick="location.href = 'subscribe.html'"
+        >
+          구독하기
+        </button>
+      </div>
+      <div class="qna">
+        <h3>술담화의 뒷담화</h3>
+        <div class="qna__list">
+          <h4 class="qna__qusetion">전통주가 도대체 무엇인가요?</h4>
+          <i class="qna__icon"></i>
+          <p class="qna__answer">
+            전통주는 탁주 • 약/청주 • 증류주 • 과실주(와인) • 기타주류 총
+            다섯가지로 분류되며, 이 안에서 또 달콤한 술, 산미있는 술, 드라이한
+            술, 고도수 저도수 등으로 나뉘어지는 다채로운 우리술입니다. <br />
+            전통주로 인정을 받기 위한 총 세가지 방법이 있는데요, 1) 무형문화재로
+            인정을 받거나, 2) 식품명인으로 등록되신 분이 술을 빚거나, 3)
+            지역특산주로써 지역 농산물을 이용하여 술을 빚는 것 이 있습니다.
+            <br />
+            전국각지 1200군데가 넘는 전통주 양조장에서 만들어지는 술의 6%는
+            무형문화재와 식품명인이 빚는 술로, 이름 그대로 ‘전통’을 계승하는
+            전통주이지만, 전체 양조장의 94%는 지역 농산물을 이용해 현대적인
+            방식으로 만들어지는 ‘지역특산주’입니다. <br />
+            전통주, 지금까지 이해하기 어려웠나요?? 전통주는 사실 대부분 올드하지
+            않고 현대적인 ‘우리술’이랍니다! 술담화와 함께 차근차근 알아가보는건
+            어떠신가요?
+          </p>
+        </div>
+        <div class="qna__list">
+          <h4 class="qna__qusetion">
+            전통주를 구독한다는 것은 무엇을 의미하나요?
+          </h4>
+          <i class="qna__icon"></i>
+          <p class="qna__answer">
+            전통주는 취하기 위해 마시는 술이 아닙니다. 유독 우리나라에서
+            뿌리깊게 자리잡은 ‘부어라마셔라’ 문화는 술을 취하기 위해 마시는
+            하나의 기능성 상품으로 인식되게 하였고, 결과적으로 생산성이 가장
+            좋은 희석식소주와 대기업 맥주가 양대산맥을 이루는 주류문화가
+            형성되었습니다. <br /><br />
+            하지만 이제 시대가 바뀌고 있습니다. 대량생산되는 품질좋은
+            메이커상품이 최고로 여겨지던 시대를 지나 이제는 개성있고 색다른 것들
+            사이에서 자신만의 취향을 찾는 사람들이 늘고 있습니다. 많은 사람들이
+            옷을 몸가리기용으로 입지 않고 하나의 패션아이템으로서 개성을
+            표현하기 위해 입는 것처럼 술 또한 나만의 개성을 표현하고, 술자리를
+            더 다채롭고 의미있게 만들기 위해 마실 수 있다면 얼마나 좋을까요?
+            <br /><br />
+            따라서 전통주를 구독한다는 것은, 2000종류가 넘는 다채로운 술 중에서
+            나만의 인생술을 찾는 하나의 여정을 시작하는 것이며, 이는 내가
+            좋아하는 색깔이, 좋아하는 연예인이, 열광하는 야구팀이, 추구하는
+            가치관이 스스로를 정의하는 것 처럼, 다채로운 술과 함께 새로운 음주
+            라이프스타일을 시작해본다는 의미를 지니고 있습니다. 술담화를 통해
+            받아보시는 술을 통해 소중한 사람들과 더 의미있는 술자리를
+            만들어보세요. 한층 더 다채로운 ‘담화’를 나누게 되실거라고 술담화는
+            자신합니다
+          </p>
+        </div>
+        <div class="qna__list">
+          <h4 class="qna__qusetion">배송비는 별도인가요?</h4>
+          <i class="qna__icon"></i>
+          <p class="qna__answer">
+            구독료는 배송비까지 포함된 가격이니 안심하시고 주문하세요! 매달
+            바뀌는 라인업의 전통주 2-4병, 큐레이션 카드, 페어링 안주 추천,
+            칵테일 레시피 등 알찬 콘텐츠까지 담긴 담화박스를 문앞까지 배송해
+            드립니다<br /><br />
+            (저희가 담아드리는 전통주들을 직접 따로 개별 구매하시는 것보다 더
+            착한 가격으로 구성된 담화박스를 더욱 편리하게 집에서 받아보세요!)
+          </p>
+        </div>
+        <div class="qna__list">
+          <h4 class="qna__qusetion">결제는 어떻게 되나요?</h4>
+          <i class="qna__icon"></i>
+          <p class="qna__answer">
+            구독신청을 하게 되시면 바로 결제되는 것이 아니라, 셋째주 월요일
+            오전에 결제가 되도록 결제예약을 걸어두는 것입니다. 매달 같은 날,
+            같은 시각에 정기적으로 결제가 되므로 매번 돌아오셔서 다시 결제를
+            하실 필요가 없습니다. 깜빡할까봐 걱정되신다구요? 결제되기 2-3일전에
+            항상 이번 달 담화박스 힌트와 함께 결제예정 알림톡을 보내드리니
+            걱정일랑 마세요!<br /><br />
+            *6개월치 혹은 1년치 선결제가 아닌, 매달 동일한 금액이 결제되는
+            시스템입니다.
+          </p>
+        </div>
+        <div class="qna__list">
+          <h4 class="qna__qusetion">
+            구독취소는 가능한가요? 구독을 쉬어갈 수도 있나요?
+          </h4>
+          <i class="qna__icon"></i>
+          <p class="qna__answer">
+            물론이죠! 매월 셋째주 일요일까지만 취소하시면, 당월 구독료부터 더
+            이상 청구되지 않습니다. 매월 셋째주 일요일 이후에 취소하시면, 해당
+            달의 담화박스까지 받아보시고 그 다음달부터 금액이 청구되지 않습니다.
+            <br /><br />
+            또한, 개인적인 사정으로 인해 1달만 결제를 미루고 싶으실 때는
+            'Sooldamhwa.com'에서 로그인 하신 후 우측 상단의 ‘나의담화’ -> 왼쪽
+            메뉴의 ;구독' 메뉴에 있는 ‘쉬어가기’ 기능을 이용하시면 당월
+            담화박스는 구독을 따로 취소하지 않고 쉬어가실 수 있고, 당월 결제는
+            이루어지지 않습니다. 다음 번 담화박스는, 따로 다시 ‘쉬어가기’ 기능을
+            사용하시지 않으신다면, 계속 받아보실 수 있구요!
+          </p>
+        </div>
+      </div>
+      <div class="more">
+        <h3>아직도 망설여지시나요?</h3>
+        <span>
+          <span> 전통주에 대해 더 알아보며<br />생각해 보실래요? </span>
+          <button>술담화 에듀</button>
+        </span>
+        <span>
+          <span> 현명한 결정을 내릴 <br />준비가 되었다면 </span>
+          <button
+            class="btn btn-subscribe"
+            onclick="location.href = 'subscribe.html'"
+          >
+            구독하기
+          </button>
+        </span>
+        <span>
+          <span>
+            술은 따로 구매하고 싶다고요?<br />술담화가 추천해드릴게요!
+          </span>
+          <button>추천퀴즈 하기</button>
+        </span>
+      </div>
+      <footer class="footer">
+        <div class="sns">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        <div class="">
+          <span>이용약관</span>
+          <span>정보처리방침</span>
+          <span>파트너 문의</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

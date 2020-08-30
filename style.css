@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gugi&family=Noto+Sans+KR:wght@300;400;700&display=swap");
+@import "reset.css";
+@import "index.css";
+@import "header-normal.css";
+@import "btn.css";
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
