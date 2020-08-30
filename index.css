@@ -24,11 +24,84 @@
 }
 
 .mainbanner__btns {
+  height: 200px;
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainSection,
+.subscribeSchedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscribeNow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: gray;
+  margin: 20px;
+}
+
+.subscribeNow h3 {
+  font-weight: 400;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.subscribeNow__introduce {
+  border-bottom: 6px #ff7276 solid;
+  border-radius: 4px;
+  padding-bottom: 8px;
+  font-size: 14px;
+}
+
+.subscribeNow__desc {
+  color: #ff7276;
+  margin: 10px 0px 30px 0px;
 }
 
 .img_sub {
-  width: 50%;
+  width: 85%;
+  margin: 20px;
+}
+
+.subscribeSumerizes {
+  border-top: gray 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  padding-top: 20px;
+}
+
+.subscribeSumerizes .summerize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.summerize i {
+  color: #ff7276;
+  font-size: 60px;
+}
+
+.summerize span {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+}
+
+.summerize span strong {
+  color: #ff7276;
 }
 
 .subscribeSchedule {

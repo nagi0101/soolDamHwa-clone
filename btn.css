@@ -2,7 +2,7 @@ button {
   width: 110px;
   height: 40px;
   border-radius: 3px;
-  font-size: 23px;
+  font-size: 18px;
   font-family: "Do Hyeon", sans-serif;
 }
 
@@ -16,4 +16,9 @@ button {
   background-color: #ff7276;
   border: none;
   color: white;
+  font-size: 24px;
+}
+
+.mainBanner__btn {
+  font-size: 24px;
 }
