@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/9ada8679dc.js"
       crossorigin="anonymous"
@@ -49,7 +53,11 @@
             지금 바로 구독신청하고 전국각지 양조장의 다양한 <br /><br />전통주를
             경험하세요
           </div>
-          <div class="subscribeNow__desc">
+          <div
+            class="subscribeNow__desc"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+          >
             구성:추천 전통주 2~4병, 큐레이션카드 2장, 스낵안주
           </div>
           <button
@@ -62,14 +70,22 @@
         <img src="img/box_including.png" alt="" class="img_sub" />
       </div>
       <div class="subscribeSumerizes">
-        <div class="sumerizes__summerize summerize">
+        <div
+          class="sumerizes__summerize summerize"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <i class="fas fa-truck"></i>
           <span
             ><br />전통주 소믈리에가 선정한 이 달의 술과 <br /><br />그에 맞는
             안주를 매월 <strong>배송</strong>해드립니다.</span
           >
         </div>
-        <div class="sumerizes__summerize summerize">
+        <div
+          class="sumerizes__summerize summerize"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <i class="fas fa-wine-glass-alt"></i>
           <span>
             <br />2,000 종류가 넘는 우리나라 술을 <br /><br /><strong
@@ -77,7 +93,11 @@
             >과 함께 받아보세요.
           </span>
         </div>
-        <div class="sumerizes__summerize summerize">
+        <div
+          class="sumerizes__summerize summerize"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <i class="fas fa-shopping-cart"></i>
           <span
             ><br />구독가보다 평균 15% 이상 더 값어치가 나가는
@@ -87,7 +107,12 @@
         </div>
       </div>
       <div class="subscribeSchedule">
-        <div class="">
+        <div
+          class=""
+          data-aos="fade-right"
+          data-aos-anchor-placement="center-bottom"
+          data-aos-duration="1000"
+        >
           <h3>매달 셋째 주 목요일 정기배송</h3>
           <p>
             담화박스는 매월 셋째 주 목요일에 찾아갑니다. <br />
@@ -98,26 +123,24 @@
         <img src="img/schedule.png" alt="" class="img_sub" />
       </div>
       <div class="slider">
-        <div class="slider__slide slide">
-          <div class="slider__items items">
-            "술의 퀄리티도 가성비도 좋았지만 무엇보다도 한달에 한 번 기다려지는
-            하루가 생긴다는게 최고 메리트^^" <br />
-            - 정기* (3회 구매) -
-          </div>
-          <div class="slider__items items">
-            "정말 난 구독 같은거 안하는데.. 이런걸 하게 되네.. 결제한거 까먹고
-            있었는데 선물 받은 느낌이네. 불금은 전통주로 ㄱㄱ!" <br />
-            - 김연* (4회구매) -
-          </div>
-          <div class="slider__items items">
-            "각 술에 대한 설명이 담긴 큐레이션 카드, 그리고 스낵안주까지 알찬
-            구성과 정성 담긴 포장에 감동..." <br />
-            - 주민* (2회구매) -
-          </div>
-          <div class="slider__items items">
-            "평생 못마셔봤을지도 모를 막걸리를 마셔도보고, 술담화 구독하기
-            잘했음" <br />- ochul38 (2회구매) -
-          </div>
+        <div class="slider__item item">
+          "술의 퀄리티도 가성비도 좋았지만 무엇보다도 한달에 한 번 기다려지는
+          하루가 생긴다는게 최고 메리트^^" <br />
+          - 정기* (3회 구매) -
+        </div>
+        <div class="slider__item item">
+          "정말 난 구독 같은거 안하는데.. 이런걸 하게 되네.. 결제한거 까먹고
+          있었는데 선물 받은 느낌이네. 불금은 전통주로 ㄱㄱ!" <br />
+          - 김연* (4회구매) -
+        </div>
+        <div class="slider__item item">
+          "각 술에 대한 설명이 담긴 큐레이션 카드, 그리고 스낵안주까지 알찬
+          구성과 정성 담긴 포장에 감동..." <br />
+          - 주민* (2회구매) -
+        </div>
+        <div class="slider__item item">
+          "평생 못마셔봤을지도 모를 막걸리를 마셔도보고, 술담화 구독하기 잘했음"
+          <br />- ochul38 (2회구매) -
         </div>
       </div>
       <div class="subscribeReviews">
@@ -270,5 +293,10 @@
         </div>
       </footer>
     </div>
+    <script src="slider.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -6,7 +6,8 @@
   justify-content: space-between;
   height: 50px;
   background-color: white;
-  box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 10px;
+  box-shadow: rgba(110, 110, 110, 0.25) 0px 5px 10px;
+  z-index: 10;
 }
 
 .header-normal h1 {
