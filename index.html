@@ -9,6 +9,7 @@
       href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <script
       src="https://kit.fontawesome.com/9ada8679dc.js"
       crossorigin="anonymous"
@@ -145,8 +146,81 @@
       </div>
       <div class="subscribeReviews">
         <h3>최근 담화</h3>
-        <div class="reviews"></div>
-        <div class="dots"></div>
+        <div class="reviews swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide review">
+              <img src="img/review_img/img1.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>drinker100</b><br /><br />
+                -5월 술담화- '매실' 이 테마인 새콤달콤, 진득한 단맛을 다 느낄 수
+                있는 패키지</span
+              >
+            </div>
+            <div class="swiper-slide review">
+              <img src="img/review_img/img2.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>leedddiii</b><br /><br />
+                -술일기- 3월 술담화는 프리미엄막걸리~~~ 복순도가 워낙 유명한
+                막걸리라 알고는 있는 술이였지만 탁주도 새로 나왔다 하여
+                두근두근</span
+              >
+            </div>
+            <div class="swiper-slide review">
+              <img src="img/review_img/img3.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>ssomin_k</b><br /><br />
+
+                한달에 한번 2~4병 정도 새로운 전통주가 날 찾아 온다던데, 5월의
+                전통주의 주제는 매실.원래도 매실 좋아하긴 했는데, 감히
+                매화수따위론 비교가 안되는 맛.</span
+              >
+            </div>
+            <div class="swiper-slide review">
+              <img src="img/review_img/img4.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>me9mi_hye</b><br /><br />
+                안주 페어링, 스토리텔링 등이 적힌 친절한 큐카드에 감동 ;)
+                -서울의 밤이 토닉워터랑 마시면 그렇게 맛있다고들...!</span
+              >
+            </div>
+            <div class="swiper-slide review">
+              <img src="img/review_img/img5.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>_ksh_0727_</b><br /><br />
+                -5월의 술담화- 며칠전 나이트 퇴근하자마자 집에 술이
+                똭!ㅋㅋㅋㅋㅋ 다음달은 어떤 술일까 벌써 기대된다 맛나게
+                먹겠습니다~ 근데 언제 마시지?!ㅋㅋㅋㅋ</span
+              >
+            </div>
+            <div class="swiper-slide review">
+              <img src="img/review_img/img6.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>childhood_me</b><br /><br />
+                새 취미생활 - 월 2병 전통주 구독 진짜 너무 좋다. 그래 이래야
+                정말 술이지 크으...다음 달엔 어떤 술이 우리 집에 찾아올까?</span
+              >
+            </div>
+            <div class="swiper-slide review">
+              <img src="img/review_img/img7.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>woo_ji_young__</b><br /><br />
+                조금 늦은 4월 술담화 언박싱 .. 이번달도 아까워서 어떻게 마시지
+                (순삭각) 당분간 퇴근길이 즐겁겠다 :)</span
+              >
+            </div>
+            <div class="swiper-slide review">
+              <img src="img/review_img/img8.jpg" class="review__img" />
+              <span class="review__review"
+                ><b>soyoung0606</b><br /><br />
+                요즘 세상 좋은 세상 #담화박스 #술담화 #찾아오는인생술</span
+              >
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div> -->
+        </div>
       </div>
       <div class="subscribeRemain">
         <h3>이번달 담화박스</h3>
@@ -298,5 +372,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="swiper.js"></script>
   </body>
 </html>

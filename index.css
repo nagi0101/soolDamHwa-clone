@@ -190,8 +190,65 @@
 
 @media (min-width: 1180px) {
   .slider .slider__item {
-    width: 100%;
+    width: 90%;
   }
 }
 
 /* .slider 끝 */
+
+/*subscribeReviews 시작*/
+.subscribeReviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: rgb(200, 200, 200) 1px solid;
+  border-bottom: rgb(200, 200, 200) 1px solid;
+  height: 500px;
+}
+
+.subscribeReviews h3 {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.subscribeReviews .swiper-container {
+  width: 80%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+.subscribeReviews .swiper-container .swiper-slide {
+  height: 350px;
+  width: 150px;
+  background-color: white;
+  box-shadow: rgb(200, 200, 200) 1px 1px 5px, rgb(200, 200, 200) -1px -1px 10px;
+  /* border: black 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review__img {
+  height: 50%;
+  width: 100%;
+}
+
+.review__review {
+  width: 90%;
+  height: 90%;
+  color: rgb(60, 60, 60);
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.review__review b {
+  color: rgb(30, 30, 30);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.swiper-pagination > .swiper-pagination-bullet {
+  background-color: #ff7276;
+}
