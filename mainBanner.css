@@ -1,0 +1,36 @@
+/* .mainBanner 시작 */
+.mainBanner {
+  color: white;
+  background-color: gray;
+  background-image: url("img/mainBanner.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-shadow: gray 0.5px 0.5px 1px;
+}
+
+.mainBanner h2 {
+  margin-top: 500px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.mainBanner h3 {
+  margin-top: 200px;
+  font-size: 15px;
+}
+
+.mainbanner__btns {
+  height: 200px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .mainBanner 끝 */

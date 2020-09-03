@@ -4,7 +4,11 @@ var mySwiper = new Swiper(".swiper-container", {
   loop: true,
   loopedSlides: document.querySelectorAll(".swiper-slide").length,
   slidesPerView: "auto",
-  spaceBetween: 20,
+  spaceBetween: 25,
+  effect: slide,
+  autoplay: {
+    delay: 4000,
+  },
 
   // If we need pagination
   pagination: {

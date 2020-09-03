@@ -18,4 +18,4 @@ function slide() {
 }
 
 slide();
-setInterval(slide, 3500);
+setInterval(slide, 3000);
