@@ -27,6 +27,12 @@
   transition: opacity ease-in-out 0.5s;
 }
 
+@media (max-width: 500px) {
+  .slider__item {
+    width: 250px;
+  }
+}
+
 .showing {
   z-index: 1;
   opacity: 1;
