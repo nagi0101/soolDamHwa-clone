@@ -1,0 +1,54 @@
+/* .subscribeSchedule 시작 */
+.subscribeSchedule {
+  width: 100%;
+  background-color: #f9f7f6;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribeSchedule__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.scheduleInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.scheduleInfo > h3 {
+  font-size: 25px;
+  margin: 40px 0;
+}
+
+.scheduleInfo > p {
+  font-weight: 300;
+  line-height: 150%;
+}
+
+.scheduleInfo > p > strong {
+  font-weight: bold;
+}
+
+@media (min-width: 1180px) {
+  .subscribeSchedule__wrap {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .schedule_img {
+    width: 600px;
+    margin: 0;
+  }
+}
+/* .subscribeSchedule 끝 */

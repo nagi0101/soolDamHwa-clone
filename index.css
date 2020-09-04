@@ -1,5 +1,8 @@
 @import "mainBanner.css";
 @import "slider.css";
+@import "subscribeSummarize.css";
+@import "subscribeSchedule.css";
+@import "subscribeReviews.css";
 
 /* .mainSection 시작 */
 .mainSection,
@@ -56,155 +59,46 @@
   }
 }
 
-/* .subscribeSumerizes 시작 */
-.subscribeSumerizes {
-  border-top: gray 1px solid;
+/* subscribeRemain 시작 */
+.subscribeRemain {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 40px;
-  padding-top: 20px;
+  justify-content: space-around;
+  height: 250px;
 }
 
-.subscribeSumerizes .summerize {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 20px;
+.subscribeRemain h3 {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(80, 80, 80);
+  margin-top: 50px;
 }
 
-.summerize i {
-  color: #ff7276;
-  font-size: 60px;
-}
-
-.summerize span {
+.subscribeRemain p {
   text-align: center;
-  color: gray;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 200%;
+  color: rgb(80, 80, 80);
 }
 
-.summerize span strong {
-  color: #ff7276;
-}
-
-@media (min-width: 1180px) {
-  .subscribeSumerizes {
-    flex-direction: row;
-  }
-}
-/* .subscribeSumerizes 끝 */
-
-/* .subscribeSchedule 시작 */
-.subscribeSchedule {
-  width: 100%;
-  background-color: #f9f7f6;
-  color: gray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.subscribeSchedule__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.scheduleInfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.scheduleInfo > h3 {
-  font-size: 25px;
-  margin: 40px 0;
-}
-
-.scheduleInfo > p {
-  font-weight: 300;
-  line-height: 150%;
-}
-
-.scheduleInfo > p > strong {
+.subscribeRemain p strong {
   font-weight: bold;
 }
 
-@media (min-width: 1180px) {
-  .subscribeSchedule__wrap {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+.subscribeRemain .aos-animate strong {
+  /* transition: color #ff7276;
+  transition-duration: 0.5s;
+  transition-delay: 1s; */
+  animation: colorChange 0.5s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes colorChange {
+  0% {
+    color: inherit;
   }
-
-  .schedule_img {
-    width: 600px;
-    margin: 0;
+  100% {
+    color: #ff7276;
   }
-}
-/* .subscribeSchedule 끝 */
-
-/*subscribeReviews 시작*/
-.subscribeReviews {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  border-top: rgb(200, 200, 200) 1px solid;
-  border-bottom: rgb(200, 200, 200) 1px solid;
-  height: 600px;
-}
-
-.subscribeReviews h3 {
-  margin-top: 30px;
-  font-size: 24px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.subscribeReviews .swiper-container {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 20px;
-}
-.subscribeReviews .swiper-container .swiper-slide {
-  height: 450px;
-  width: 250px;
-  background-color: white;
-  box-shadow: rgb(200, 200, 200) 1px 1px 5px, rgb(200, 200, 200) -1px -1px 10px;
-  /* border: black 1px solid; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.review__img {
-  height: 50%;
-  width: 100%;
-}
-
-.review__review {
-  width: 90%;
-  height: 90%;
-  color: rgb(60, 60, 60);
-  font-weight: lighter;
-  font-size: 15px;
-}
-
-.review__review b {
-  color: rgb(30, 30, 30);
-  font-size: 16px;
-  font-weight: normal;
-}
-
-.swiper-pagination > .swiper-pagination-bullet {
-  background-color: #ff7276;
 }

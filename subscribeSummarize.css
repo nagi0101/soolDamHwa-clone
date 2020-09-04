@@ -1,0 +1,40 @@
+/* .subscribeSummarize 시작 */
+.subscribeSummarize {
+  border-top: gray 1px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  padding-top: 20px;
+}
+
+.subscribeSummarize .summarize {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.summarize i {
+  color: #ff7276;
+  font-size: 60px;
+}
+
+.summarize span {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+}
+
+.summarize span strong {
+  color: #ff7276;
+}
+
+@media (min-width: 1180px) {
+  .subscribeSummarize {
+    flex-direction: row;
+  }
+}
+/* .subscribeSummarize 끝 */
