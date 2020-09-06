@@ -6,29 +6,36 @@ let qnaAnswerShowing = null;
 
 const SHOWING = "qna__answer-showing";
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 function closeAnswer() {
+  const header = qnaAnswerShowing.previousElementSibling;
+  header.style.borderBottom = "1px rgb(200, 200, 200) solid";
   qnaAnswerShowing.classList.remove("qna__answer-showing");
 }
 
 function showAnswer(item) {
   const answer = item.nextElementSibling;
   answer.classList.add("qna__answer-showing");
-  return answer;
+  item.style.borderBottom = "1px rgba(200, 200, 200, 0) solid";
+  qnaAnswerShowing = answer;
 }
 
 function qnaClicked() {
-  //클릭한 qna가 이미 보여지고 있는 qna인가?
-  if (!false) {
-    //qna를 처음 클릭한 것이 아닌가?
-    if (isQnaAnswerShowing) {
-      closeAnswer();
-      qnaAnswerShowing = showAnswer(this);
-    }
-    //qna를 처음 클릭했는가?
-    else {
-      qnaAnswerShowing = showAnswer(this);
-      isQnaAnswerShowing = true;
-    }
+  //qna를 처음 클릭한 것이 아닌가?
+  if (isQnaAnswerShowing) {
+    closeAnswer();
+    sleep(300).then(() => {
+      showAnswer(this);
+    });
+    // showAnswer(this);
+  }
+  //qna를 처음 클릭했는가?
+  else {
+    showAnswer(this);
+    isQnaAnswerShowing = true;
   }
 }
 

@@ -14,7 +14,6 @@ function slide() {
   } else {
     firstSlide.classList.add(SHOWING_CLASS);
   }
-  console.log(currentSlide);
 }
 
 slide();

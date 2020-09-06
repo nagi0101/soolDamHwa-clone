@@ -82,6 +82,7 @@
 .qna .qna__list > * {
   border-bottom: 1px rgb(200, 200, 200) solid;
   font-weight: lighter;
+  background-color: white;
 }
 
 .qna__header {
@@ -98,20 +99,22 @@
 }
 
 .qna__answer {
+  color: rgba(0, 0, 0, 0);
   font-size: 13px;
   line-height: 130%;
   margin-left: 5px;
   height: 0;
-  visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  visibility: hidden;
+  transition: all 0.5s ease-out, color 0s;
 }
 
 .qna__answer-showing {
+  color: black;
   padding-bottom: 20px;
   height: auto;
-  visibility: visible;
   opacity: 1;
+  visibility: visible;
 }
 
 .qna__answer br {
