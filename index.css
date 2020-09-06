@@ -3,6 +3,7 @@
 @import "subscribeSummarize.css";
 @import "subscribeSchedule.css";
 @import "subscribeReviews.css";
+@import "subscribeRemain.css";
 
 /* .mainSection 시작 */
 .mainSection,
@@ -59,46 +60,62 @@
   }
 }
 
-/* subscribeRemain 시작 */
-.subscribeRemain {
+/* qna 시작 */
+.qna {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  height: 250px;
 }
 
-.subscribeRemain h3 {
-  font-size: 26px;
-  font-weight: 700;
+.qna h3 {
+  font-size: 30px;
   color: rgb(80, 80, 80);
-  margin-top: 50px;
+  margin: 30px;
 }
 
-.subscribeRemain p {
-  text-align: center;
-  font-size: 18px;
-  line-height: 200%;
+.qna__list {
   color: rgb(80, 80, 80);
+  width: 100%;
 }
 
-.subscribeRemain p strong {
-  font-weight: bold;
+.qna .qna__list > * {
+  border-bottom: 1px rgb(200, 200, 200) solid;
+  font-weight: lighter;
 }
 
-.subscribeRemain .aos-animate strong {
-  /* transition: color #ff7276;
-  transition-duration: 0.5s;
-  transition-delay: 1s; */
-  animation: colorChange 0.5s linear forwards;
-  animation-delay: 1s;
+.qna__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
-@keyframes colorChange {
-  0% {
-    color: inherit;
-  }
-  100% {
-    color: #ff7276;
-  }
+.qna__header :nth-child(n) {
+  margin: 0 10px;
+}
+
+.qna__answer {
+  font-size: 13px;
+  line-height: 130%;
+  margin-left: 5px;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.qna__answer-showing {
+  padding-bottom: 20px;
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.qna__answer br {
+  content: " ";
+  display: block;
+  margin: 15px 0;
 }
