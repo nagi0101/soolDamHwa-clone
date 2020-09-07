@@ -1,7 +1,6 @@
 const hDateRemain = document.querySelector(".subscribeRemain p strong");
 const qnaHeaders = document.querySelectorAll(".qna__header");
 const qnaAnswers = document.querySelectorAll(".qna__answer");
-let isQnaAnswerShowing = false;
 let qnaAnswerShowing = null;
 
 const SHOWING = "qna__answer-showing";
@@ -12,30 +11,39 @@ function sleep(ms) {
 
 function closeAnswer() {
   const header = qnaAnswerShowing.previousElementSibling;
-  header.style.borderBottom = "1px rgb(200, 200, 200) solid";
+  const icon = header.lastElementChild;
+  icon.classList.remove("fa-angle-down");
+  icon.classList.add("fa-angle-up");
   qnaAnswerShowing.classList.remove("qna__answer-showing");
+  // sleep(500).then(() => {
+  //   header.style.borderBottom = "1px rgb(200, 200, 200) solid";
+  // });
 }
 
 function showAnswer(item) {
   const answer = item.nextElementSibling;
+  const icon = item.lastElementChild;
   answer.classList.add("qna__answer-showing");
-  item.style.borderBottom = "1px rgba(200, 200, 200, 0) solid";
+  // item.style.borderBottom = "1px rgba(200, 200, 200, 0) solid";
+  icon.classList.remove("fa-angle-up");
+  icon.classList.add("fa-angle-down");
   qnaAnswerShowing = answer;
 }
 
 function qnaClicked() {
-  //qna를 처음 클릭한 것이 아닌가?
-  if (isQnaAnswerShowing) {
-    closeAnswer();
-    sleep(300).then(() => {
+  if (this.nextElementSibling !== qnaAnswerShowing) {
+    //qna를 처음 클릭한 것이 아닌가?
+    if (qnaAnswerShowing) {
+      closeAnswer(this);
+      sleep(300).then(() => {
+        showAnswer(this);
+      });
+      // showAnswer(this);
+    }
+    //qna를 처음 클릭했는가?
+    else {
       showAnswer(this);
-    });
-    // showAnswer(this);
-  }
-  //qna를 처음 클릭했는가?
-  else {
-    showAnswer(this);
-    isQnaAnswerShowing = true;
+    }
   }
 }
 

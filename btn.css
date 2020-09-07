@@ -22,3 +22,8 @@ button {
 .mainBanner__btn {
   font-size: 24px;
 }
+
+.btn_white {
+  color: #ff7276;
+  border: 1px #ff7276 solid;
+}

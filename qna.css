@@ -1,0 +1,80 @@
+/* qna 시작 */
+.qna {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qna h3 {
+  font-size: 30px;
+  color: rgb(80, 80, 80);
+  margin: 30px;
+}
+
+.qna__list {
+  color: rgb(80, 80, 80);
+  width: 100%;
+  border-bottom: 1px rgb(200, 200, 200) solid;
+}
+
+.qna .qna__list > * {
+  /* border-bottom: 1px rgb(200, 200, 200) solid; */
+  font-weight: lighter;
+  background-color: white;
+}
+
+.qna__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.qna__header :nth-child(n) {
+  margin: 0 10px;
+}
+
+.qna__answer {
+  color: rgba(0, 0, 0, 0);
+  font-size: 13px;
+  line-height: 130%;
+  margin-left: 5px;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out, color 0.05s;
+}
+
+.qna__answer-showing {
+  color: rgb(80, 80, 80);
+  padding-bottom: 20px;
+  height: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.qna__answer br {
+  content: " ";
+  display: block;
+  margin: 15px 0;
+}
+
+@media (min-width: 1180px) {
+  .qna__list {
+    width: 1000px;
+    font-size: 22px;
+  }
+
+  .qna__header {
+    height: 77px;
+    font-size: 22px;
+  }
+
+  .qna__answer {
+    font-size: 15px;
+  }
+}
+/* qna 끝 */

@@ -4,6 +4,7 @@
 @import "subscribeSchedule.css";
 @import "subscribeReviews.css";
 @import "subscribeRemain.css";
+@import "qna.css";
 
 /* .mainSection 시작 */
 .mainSection,
@@ -60,65 +61,31 @@
   }
 }
 
-/* qna 시작 */
-.qna {
-  margin-top: 50px;
+/* more 시작 */
+
+.more {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
-.qna h3 {
-  font-size: 30px;
+.more h3 {
+  font-size: 24px;
   color: rgb(80, 80, 80);
   margin: 30px;
 }
 
-.qna__list {
-  color: rgb(80, 80, 80);
-  width: 100%;
-}
-
-.qna .qna__list > * {
-  border-bottom: 1px rgb(200, 200, 200) solid;
-  font-weight: lighter;
-  background-color: white;
-}
-
-.qna__header {
+.more__content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  height: 60px;
-  font-size: 15px;
-  cursor: pointer;
+  justify-content: space-around;
+  height: 120px;
 }
 
-.qna__header :nth-child(n) {
-  margin: 0 10px;
-}
-
-.qna__answer {
-  color: rgba(0, 0, 0, 0);
-  font-size: 13px;
-  line-height: 130%;
-  margin-left: 5px;
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease-out, color 0s;
-}
-
-.qna__answer-showing {
-  color: black;
-  padding-bottom: 20px;
-  height: auto;
-  opacity: 1;
-  visibility: visible;
-}
-
-.qna__answer br {
-  content: " ";
-  display: block;
-  margin: 15px 0;
+.more__content div {
+  text-align: center;
+  color: rgb(80, 80, 80);
+  line-height: 150%;
 }
