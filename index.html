@@ -46,29 +46,46 @@
         </div>
       </div>
       <div class="mainSection">
-        <img src="img/graph.jpg" alt="" class="img_sub" />
-        <img src="img/sub_this_month.jpg" alt="" class="img_sub" />
-        <div class="subscribeNow">
-          <h3>담화박스</h3>
-          <div class="subscribeNow__introduce">
-            지금 바로 구독신청하고 전국각지 양조장의 다양한 <br /><br />전통주를
-            경험하세요
-          </div>
-          <div
-            class="subscribeNow__desc"
-            data-aos="flip-down"
-            data-aos-duration="1000"
-          >
-            구성:추천 전통주 2~4병, 큐레이션카드 2장, 스낵안주
-          </div>
-          <button
-            class="btn btn-subscribe"
-            onclick="location.href = 'subscribe.html'"
-          >
-            구독하기
-          </button>
+        <div class="img-wrapper">
+          <img src="img/graph.jpg" alt="" class="img_sub img-sm" />
+          <img src="img/large_img/large_graph_desc.jpg" class="img-lg" />
+          <img src="img/large_img/large_graph.jpg" class="img-lg" />
         </div>
-        <img src="img/box_including.png" alt="" class="img_sub" />
+        <div class="img-wrapper">
+          <img src="img/sub_this_month.jpg" alt="" class="img_sub img-sm" />
+          <img
+            src="img/large_img/large_sub_this_month_desc.jpg"
+            class="img-lg"
+          />
+          <img src="img/large_img/large_sub_this_month.jpg" class="img-lg" />
+        </div>
+        <div class="img-wrapper img-wrapper-including">
+          <div class="subscribeNow">
+            <h3>담화박스</h3>
+            <div class="subscribeNow__introduce">
+              지금 바로 구독신청하고 전국각지 양조장의 다양한
+              <br /><br />전통주를 경험하세요
+            </div>
+            <div
+              class="subscribeNow__desc"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              구성:추천 전통주 2~4병, 큐레이션카드 2장, 스낵안주
+            </div>
+            <button
+              class="btn btn-subscribe"
+              onclick="location.href = 'subscribe.html'"
+            >
+              구독하기
+            </button>
+          </div>
+          <img
+            src="img/box_including.png"
+            alt=""
+            class="img_sub img_including"
+          />
+        </div>
       </div>
       <div class="subscribeSummarize">
         <div
@@ -371,17 +388,40 @@
         </span>
       </div>
       <footer class="footer">
-        <div class="sns">
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-        </div>
-        <div class="">
-          <span>이용약관</span>
-          <span>정보처리방침</span>
-          <span>파트너 문의</span>
+        <div class="footer__wrapper">
+          <div class="footer__content footer__sns">
+            <i class="fab fa-youtube-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+          <div class="footer__content footer__rules">
+            <span>이용약관</span>
+            <span>정보처리방침</span>
+            <span>파트너 문의</span>
+          </div>
+          <div class="footer__content footer__seller">
+            <span class="seller-info">
+              농업회사법인 술담화 주식회사 <br />
+
+              대표: 이재욱<br />
+
+              정보보호 책임자: 담화컴퍼니 주식회사<br />
+
+              경기도 용인시 수지구 상현동 508 광교우미뉴브 A동 525-2호<br />
+
+              사업자등록번호: 259-81-01667 <strong>사업자확인</strong> <br />
+
+              통신판매 신고번호: 2020-용인수지-0636<br />
+
+              대표전화: 050-6725-9338<br />
+
+              이메일: info@sooldamhwa.com
+            </span>
+          </div>
+          <div class="footer__content footer__call">
+            <strong>고객센터: 050-6725-9338</strong> <br />
+            평일 10:00-18:00, 주말 휴무
+          </div>
         </div>
       </footer>
     </div>

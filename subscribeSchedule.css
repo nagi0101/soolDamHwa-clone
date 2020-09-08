@@ -4,8 +4,8 @@
   background-color: #f9f7f6;
   color: gray;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .subscribeSchedule__wrap {
@@ -39,7 +39,7 @@
 
 @media (min-width: 1180px) {
   .subscribeSchedule__wrap {
-    width: 80%;
+    width: 1000px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,4 +51,5 @@
     margin: 0;
   }
 }
+
 /* .subscribeSchedule 끝 */

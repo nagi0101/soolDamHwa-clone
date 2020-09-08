@@ -1,0 +1,84 @@
+/* footer 시작 */
+.footer__wrapper {
+  position: relative;
+}
+
+.footer__content {
+  font-weight: lighter;
+  color: rgb(80, 80, 80);
+  margin: 10px 10px;
+}
+
+.footer__sns {
+  font-size: 32px;
+}
+
+.fa-youtube-square {
+  color: red;
+}
+
+.fa-instagram-square {
+  background: radial-gradient(
+    circle,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* color: radial-gradient(
+      circle,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(253, 29, 29, 1) 50%,
+      rgba(252, 176, 69, 1) 100%
+    ); */
+}
+
+.fa-facebook-square {
+  color: #305aa8;
+}
+
+.footer__rules {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+
+.footer__seller {
+  font-size: 12px;
+}
+
+.footer__call strong {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer__call {
+  font-size: 14px;
+}
+
+@media (min-width: 1180px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .footer__wrapper {
+    width: 1100px;
+  }
+  .footer__seller {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    text-align: right;
+  }
+  .footer__call strong {
+    font-size: 26px;
+  }
+}
+
+/* footer 끝 */

@@ -35,7 +35,7 @@ function qnaClicked() {
     //qna를 처음 클릭한 것이 아닌가?
     if (qnaAnswerShowing) {
       closeAnswer(this);
-      sleep(300).then(() => {
+      sleep(350).then(() => {
         showAnswer(this);
       });
       // showAnswer(this);
