@@ -4,12 +4,14 @@ button {
   border-radius: 3px;
   font-size: 18px;
   font-family: "Do Hyeon", sans-serif;
+  cursor: pointer;
 }
 
 .btn {
   background-color: white;
   border: none;
   color: black;
+  /* outline: none; */
 }
 
 .btn-subscribe {
@@ -26,4 +28,17 @@ button {
 .btn_white {
   color: #ff7276;
   border: 1px #ff7276 solid;
+}
+
+.side-bar .side-bar__btn {
+  width: 100%;
+  margin: 10px 0;
+}
+
+@media (min-width: 1180px) {
+  .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 22px;
+  }
 }

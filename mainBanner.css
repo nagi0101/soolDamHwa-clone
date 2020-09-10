@@ -33,4 +33,49 @@
   justify-content: space-between;
 }
 
+@media (min-width: 1180px) {
+  .mainBanner {
+    height: 700px;
+    position: relative;
+    background-position: 50% 35%;
+  }
+
+  .mainBanner__wrapper {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    transform: translateY(-50%);
+    height: 210px;
+  }
+
+  .mainBanner h2 {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  .mainBanner h3 {
+    margin-top: 0px;
+    font-size: 26px;
+  }
+  .mainBanner h3 br {
+    display: none;
+  }
+
+  .mainbanner__btns {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    height: auto;
+  }
+
+  .mainBanner__btn {
+    margin-right: 30px;
+  }
+}
 /* .mainBanner 끝 */

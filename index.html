@@ -18,31 +18,41 @@
   <body>
     <div class="wrap">
       <header class="header-normal">
-        <h1><a href="index.html">술담화</a></h1>
+        <h1 draggable="true">술담화</h1>
         <div class="header__menus">
-          <a href=""><span>나의 담화</span></a>
-          <a href=""><span>로그아웃</span></a>
+          <span>나의 담화</span>
+          <span>로그아웃</span>
           <i class="fas fa-bars"></i>
         </div>
       </header>
       <div class="mainBanner">
-        <h2 class="mainBanner__title">오늘부터 술은 <br />특별하고 의미있게</h2>
-        <h3 class="mainBanner__subTitle">
-          술담화와 함께 매월 새로운 <br />전통주를 즐겨보세요
-        </h3>
-        <div class="mainbanner__btns">
-          <button
-            class="btn btn-subscribe mainBanner__btn"
-            onclick="location.href = 'subscribe.html'"
+        <div class="mainBanner__wrapper">
+          <h2
+            class="mainBanner__title"
+            data-aos="fade-right"
+            data-aos-duration="1000"
           >
-            구독하기
-          </button>
-          <button
-            class="btn mainBanner__btn"
-            onclick="location.href = 'shop.html'"
+            오늘부터 술은 <br />특별하고 의미있게
+          </h2>
+          <h3
+            class="mainBanner__subTitle"
+            data-aos="fade-left"
+            data-aos-duration="1000"
           >
-            쇼핑몰
-          </button>
+            술담화와 함께 매월 새로운 <br />전통주를 즐겨보세요
+          </h3>
+          <div class="mainbanner__btns">
+            <!-- <button
+              class="btn btn-subscribe mainBanner__btn"
+              onclick="location.href = 'subscribe.html'"
+            > -->
+            <button class="btn btn-subscribe mainBanner__btn">구독하기</button>
+            <!-- <button
+              class="btn mainBanner__btn"
+              onclick="location.href = 'shop.html'"
+            > -->
+            <button class="btn mainBanner__btn btn_white">쇼핑몰</button>
+          </div>
         </div>
       </div>
       <div class="mainSection">
@@ -73,12 +83,11 @@
             >
               구성:추천 전통주 2~4병, 큐레이션카드 2장, 스낵안주
             </div>
-            <button
+            <!-- <button
               class="btn btn-subscribe"
               onclick="location.href = 'subscribe.html'"
-            >
-              구독하기
-            </button>
+            > -->
+            <button class="btn btn-subscribe">구독하기</button>
           </div>
           <img
             src="img/box_including.png"
@@ -255,12 +264,11 @@
           <strong>22일</strong> 밖에 안남았습니다. <br />이번달 담화박스 놓치지
           마세요!
         </p>
-        <button
+        <!-- <button
           class="btn btn-subscribe"
           onclick="location.href = 'subscribe.html'"
-        >
-          구독하기
-        </button>
+        > -->
+        <button class="btn btn-subscribe">구독하기</button>
       </div>
       <div class="qna">
         <h3>술담화의 뒷담화</h3>
@@ -369,23 +377,26 @@
       </div>
       <div class="more">
         <h3>아직도 망설여지시나요?</h3>
-        <span class="more__content">
-          <div>전통주에 대해 더 알아보며<br />생각해 보실래요?</div>
-          <button class="btn btn_white">술담화 에듀</button>
-        </span>
-        <span class="more__content">
-          <div>현명한 결정을 내릴 <br />준비가 되었다면</div>
-          <button
-            class="btn btn-subscribe"
-            onclick="location.href = 'subscribe.html'"
-          >
-            구독하기
-          </button>
-        </span>
-        <span class="more__content">
-          <div>술은 따로 구매하고 싶다고요?<br />술담화가 추천해드릴게요!</div>
-          <button class="btn btn_white">추천퀴즈 하기</button>
-        </span>
+        <div class="more__wrapper">
+          <span class="more__content">
+            <div>전통주에 대해 더 알아보며<br />생각해 보실래요?</div>
+            <button class="btn btn_white">술담화 에듀</button>
+          </span>
+          <span class="more__content">
+            <div>현명한 결정을 내릴 <br />준비가 되었다면</div>
+            <!-- <button
+              class="btn btn-subscribe"
+              onclick="location.href = 'subscribe.html'"
+            > -->
+            <button class="btn btn-subscribe">구독하기</button>
+          </span>
+          <span class="more__content">
+            <div>
+              술은 따로 구매하고 싶다고요?<br />술담화가 추천해드릴게요!
+            </div>
+            <button class="btn btn_white">추천퀴즈 하기</button>
+          </span>
+        </div>
       </div>
       <footer class="footer">
         <div class="footer__wrapper">
@@ -424,7 +435,33 @@
           </div>
         </div>
       </footer>
+      <div class="side-bar">
+        <div class="side-bar__wrapper">
+          <div class="side-bar__btns">
+            <!-- <button
+                class="btn btn-subscribe mainBanner__btn"
+                onclick="location.href = 'subscribe.html'"
+              > -->
+            <button class="btn btn-subscribe side-bar__btn">구독하기</button>
+            <button class="btn side-bar__btn btn_white">쇼핑몰</button>
+          </div>
+          <ul class="side-bar__contents">
+            <li class="side-bar__content">우리소개</li>
+            <li class="side-bar__content">양조장소개</li>
+            <li class="side-bar__content">프로모션</li>
+            <li class="side-bar__content">Q&A</li>
+            <li class="side-bar__content">1:1문의</li>
+            <li class="side-bar__content">나의 담화</li>
+          </ul>
+          <div class="side-bar__sns">
+            <i class="fab fa-youtube-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-facebook-square"></i>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="index.js"></script>
     <script src="slider.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
@@ -432,6 +469,5 @@
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="swiper.js"></script>
-    <script src="index.js"></script>
   </body>
 </html>
